@@ -1,0 +1,11 @@
+def sort_function(in_list):
+    n = len(in_list)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if in_list[i] >= in_list[j]:
+                in_list[i], in_list[j] = in_list[j], in_list[i]
+    return in_list
+
+test_list = [6, 37, 25, 12, 4, 1, 9]
+sort_function(test_list)
+print(sort_function(test_list))
